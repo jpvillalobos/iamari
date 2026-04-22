@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iamari - Assistant for Real Individuals</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        header { text-align: center; margin-bottom: 60px; }
+        h1 { font-size: 3em; margin-bottom: 10px; color: #000; }
+        .tagline { font-size: 1.2em; color: #666; margin-bottom: 30px; }
+        .hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 60px 20px; border-radius: 10px; margin-bottom: 40px; text-align: center; }
+        .hero h2 { font-size: 2em; margin-bottom: 20px; }
+        .hero p { font-size: 1.1em; margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto; }
+        .cta { background: white; color: #667eea; padding: 15px 40px; border: none; border-radius: 5px; font-size: 1em; font-weight: bold; cursor: pointer; }
+        .cta:hover { background: #f0f0f0; }
+        .features { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 40px 0; }
+        .feature { padding: 20px; border: 1px solid #ddd; border-radius: 5px; }
+        .feature h3 { margin-bottom: 10px; color: #667eea; }
+        .signup { background: #f5f5f5; padding: 40px; border-radius: 10px; text-align: center; }
+        .signup input { padding: 12px; font-size: 1em; border: 1px solid #ddd; border-radius: 5px; width: 100%; max-width: 300px; margin-bottom: 10px; }
+        .signup button { background: #667eea; color: white; padding: 12px 30px; border: none; border-radius: 5px; font-size: 1em; cursor: pointer; }
+        .signup button:hover { background: #764ba2; }
+        footer { text-align: center; margin-top: 60px; color: #999; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>iamari.ai</h1>
+            <p class="tagline">Assistant for Real Individuals</p>
+        </header>
+
+        <div class="hero">
+            <h2>Never miss an important email again</h2>
+            <p>School deadlines. Doctor appointments. Invoices. Family decisions. iamari reads your email, summarizes what matters, and sends it to your WhatsApp.</p>
+            <button class="cta">Get Early Access</button>
+        </div>
+
+        <h2 style="text-align: center; margin: 50px 0 30px;">What iamari does</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>📧 Reads Your Email</h3>
+                <p>Connects to your inbox. Reads every email as it arrives.</p>
+            </div>
+            <div class="feature">
+                <h3>✅ Summarizes</h3>
+                <p>Extracts what matters: dates, deadlines, amounts, actions.</p>
+            </div>
+            <div class="feature">
+                <h3>💬 Sends to WhatsApp</h3>
+                <p>You get a clean summary on WhatsApp. No app to install.</p>
+            </div>
+            <div class="feature">
+                <h3>🎯 Follows Your Rules</h3>
+                <p>School emails, finances, subscriptions. You decide what matters.</p>
+            </div>
+        </div>
+
+        <div class="signup">
+            <h3>Be first to try iamari</h3>
+            <p>We're launching soon. Get early access:</p>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <input type="email" name="email" placeholder="tu@email.com" required>
+                <button type="submit">Join the Waitlist</button>
+            </form>
+        </div>
+
+        <footer>
+            <p>iamari.ai — Assistant for Real Individuals</p>
+            <p>Coming soon to Costa Rica</p>
+        </footer>
+    </div>
+</body>
+</html>
