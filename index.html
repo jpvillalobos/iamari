@@ -206,8 +206,22 @@
     @keyframes bubbleIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
     .wa-bubble-title { font-weight: 600; color: var(--amber); margin-bottom: 6px; }
     .wa-bubble-label { color: #8a9ab5; font-size: 0.85em; }
+    .wa-detail-list { margin-top: 8px; display: flex; flex-direction: column; gap: 4px; }
+    .wa-detail-item { display: flex; gap: 6px; align-items: baseline; }
+    .wa-detail-key { min-width: 54px; color: #8a9ab5; font-size: 0.83em; }
+    .wa-detail-value { color: var(--text-primary); font-weight: 500; }
+    .wa-summary {
+      margin-top: 10px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.08);
+      font-size: 0.93em;
+    }
     .wa-bubble-row { display: flex; gap: 6px; margin-top: 4px; }
     .wa-tag { background: rgba(240,165,0,0.15); color: var(--amber-warm); padding: 2px 8px; border-radius: 4px; font-size: 0.9em; }
+    .wa-action-row { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+    .wa-action {
+      display: inline-flex; align-items: center; justify-content: center; padding: 5px 9px;
+      border-radius: 6px; border: 1px solid rgba(240,165,0,0.2); background: rgba(240,165,0,0.08);
+      color: var(--amber-warm); font-size: 0.82em; font-weight: 500;
+    }
     .wa-time { font-size: 0.75em; color: #4a5568; text-align: right; margin-top: 6px; }
     .phone-glow { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 320px; height: 500px; background: radial-gradient(ellipse, rgba(240,165,0,0.08) 0%, transparent 70%); pointer-events: none; z-index: -1; }
 
@@ -469,6 +483,13 @@
           <li class="feature-item">
             <div class="feature-check">✓</div>
             <div class="feature-text">
+              <h4>Exportación de transacciones a Excel</h4>
+              <p>Cuando detecta un cargo, podés agregarlo a tu hoja de control en Microsoft Excel.</p>
+            </div>
+          </li>
+          <li class="feature-item">
+            <div class="feature-check">✓</div>
+            <div class="feature-text">
               <h4>Recordatorios automáticos</h4>
               <p>Te avisa 3 días antes de cada fecha importante. Sin que configures nada.</p>
             </div>
@@ -502,12 +523,22 @@
               <div class="wa-time">10:19 AM ✓✓</div>
             </div>
             <div class="wa-bubble">
-              <div class="wa-bubble-title">💰 Factura pendiente</div>
-              <div class="wa-bubble-label">De: Kolbi &lt;facturacion@kolbi.cr&gt;</div>
-              <div style="margin-top:8px; font-size:0.95em;">Factura de ₡28,500 por servicio de internet. Vence el 25 de abril.</div>
+              <div class="wa-bubble-title">💳 Transacción en tarjeta</div>
+              <div class="wa-bubble-label">De: BAC Credomatic &lt;alertas@baccredomatic.com&gt;</div>
+              <div class="wa-detail-list">
+                <div class="wa-detail-item"><span class="wa-detail-key">Tarjeta:</span><span class="wa-detail-value">**** 4582</span></div>
+                <div class="wa-detail-item"><span class="wa-detail-key">Fecha:</span><span class="wa-detail-value">24 abr 2026, 11:03 AM</span></div>
+                <div class="wa-detail-item"><span class="wa-detail-key">Comercio:</span><span class="wa-detail-value">Automercado Escazú</span></div>
+                <div class="wa-detail-item"><span class="wa-detail-key">Monto:</span><span class="wa-detail-value">₡28,500</span></div>
+              </div>
+              <div class="wa-summary">Compra aprobada y registrada. Podés agregarla a tu control de gastos antes del resumen semanal.</div>
               <div class="wa-bubble-row">
                 <span class="wa-tag">FINANCE</span>
                 <span class="wa-tag">🔴 ALTA</span>
+              </div>
+              <div class="wa-action-row">
+                <span class="wa-action">Agregar a Excel</span>
+                <span class="wa-action">Ver resumen</span>
               </div>
               <div class="wa-time">11:03 AM ✓✓</div>
             </div>
