@@ -1,0 +1,228 @@
+{
+  "brand": {
+    "name": "ARI",
+    "tagline": "Asistente para Personas Reales"
+  },
+  "header": {
+    "controlPanel": "Panel de Control",
+    "loggedInAs": "Sesión iniciada como"
+  },
+  "nav": {
+    "dashboard": "Inicio",
+    "settings": "Configuración",
+    "plan": "Plan",
+    "logout": "Cerrar sesión",
+    "save": "Guardar cambios",
+    "discard": "Descartar",
+    "saved": "Guardado",
+    "saving": "Guardando…",
+    "unsaved": "Cambios sin guardar"
+  },
+  "settings": {
+    "title": "Configuración",
+    "subtitle": "Actualizá todo lo que configuraste durante la inscripción.",
+    "household": "Familia",
+    "assistant": "Asistente",
+    "whatsapp": "WhatsApp",
+    "email": "Correo",
+    "skills": "Habilidades",
+    "rules": "Reglas",
+    "routines": "Rutinas",
+    "personality": "Alma"
+  },
+  "login": {
+    "kicker": "Iniciar sesión",
+    "title": "Bienvenida de vuelta.",
+    "subtitle": "Ingresá tu correo de admin y contraseña para gestionar a tu asistente familiar.",
+    "email": "Correo",
+    "emailPlaceholder": "vos@ejemplo.com",
+    "password": "Contraseña",
+    "passwordPlaceholder": "••••••••",
+    "remember": "Mantenerme conectado",
+    "submit": "Iniciar sesión",
+    "demoNote": "Mockup: cualquier correo y contraseña funciona.",
+    "forgot": "¿Olvidaste tu contraseña?"
+  },
+  "dashboard": {
+    "kicker": "Resumen",
+    "title": "Cómo le fue a {{name}} en estos {{range}}.",
+    "subtitle": "Un vistazo a la actividad, uso de habilidades y cuota disponible.",
+    "range7d": "Últimos 7 días",
+    "range30d": "Últimos 30 días",
+    "stats": {
+      "messagesSent": "Mensajes enviados",
+      "messagesReceived": "Mensajes recibidos",
+      "emailsTriaged": "Correos clasificados",
+      "emailsArchived": "Newsletters archivados",
+      "routinesTriggered": "Rutinas ejecutadas"
+    },
+    "skills": {
+      "title": "Uso de habilidades",
+      "subtitle": "Cuántas veces corrió cada capacidad.",
+      "emailTriage": "Triage de correo",
+      "weather": "Clima",
+      "voiceTranscription": "Transcripción de voz",
+      "imageOcr": "OCR de imágenes",
+      "browserAutomation": "Automatización del navegador",
+      "calendar": "Calendario"
+    },
+    "quota": {
+      "title": "Cuota de tokens",
+      "subtitle": "Reinicia el {{date}}.",
+      "used": "{{used}} de {{limit}} usados",
+      "remaining": "{{remaining}} tokens disponibles",
+      "plan": "Plan {{plan}}"
+    },
+    "activity": {
+      "title": "Actividad reciente",
+      "empty": "Aún no hay actividad."
+    }
+  },
+  "household": {
+    "kicker": "Familia",
+    "title": "A quién conoce Ari.",
+    "subtitle": "Editá miembros de la familia. Los eliminados pierden acceso a WhatsApp al guardar.",
+    "familyName": "Apellido familiar",
+    "familyNameHint": "Cómo Ari se refiere a tu familia.",
+    "members": "Miembros",
+    "addMember": "Agregar miembro",
+    "memberName": "Nombre",
+    "memberNickname": "Apodo",
+    "memberPhone": "Número de WhatsApp",
+    "memberRole": "Rol",
+    "memberLanguage": "Idioma",
+    "roleOwner": "Admin",
+    "roleAdult": "Adulto",
+    "roleChild": "Hijo/a",
+    "langEs": "Español",
+    "langEn": "Inglés",
+    "langBoth": "Ambos",
+    "remove": "Eliminar",
+    "limitNote": "Tu plan permite {{max}} miembros."
+  },
+  "assistant": {
+    "kicker": "Asistente",
+    "title": "Nombre, vibra, idiomas.",
+    "subtitle": "Cómo lo llama tu familia y cómo suena de fábrica.",
+    "name": "Nombre del asistente",
+    "emoji": "Emoji",
+    "vibe": "Personalidad",
+    "vibeWarm": "Cálido",
+    "vibeDirect": "Directo",
+    "languages": "Idiomas",
+    "languagesHint": "Elegí uno o ambos. La preferencia de cada miembro tiene prioridad."
+  },
+  "whatsapp": {
+    "kicker": "WhatsApp",
+    "title": "Quién está conectado.",
+    "subtitle": "Activá la entrega por WhatsApp para cada miembro.",
+    "noMembers": "Primero agregá un miembro."
+  },
+  "email": {
+    "kicker": "Correo",
+    "title": "Dirección AgentMail y reenvío.",
+    "subtitle": "La bandeja privada donde llega el reenvío de Gmail.",
+    "address": "Dirección de la bandeja",
+    "addressHint": "Podés cambiarla cuando quieras.",
+    "forwarding": "El reenvío de Gmail está configurado",
+    "forwardingDesc": "Si lo apagás, Ari deja de hacer triage hasta que lo vuelvas a activar.",
+    "skipped": "Saltarme el triage de correo"
+  },
+  "skills": {
+    "kicker": "Habilidades",
+    "title": "Lo que Ari puede hacer.",
+    "subtitle": "Activá capacidades. Las habilidades desactivadas dejan de correr al guardar.",
+    "emailTriageDesc": "Lee, clasifica y resume el correo entrante.",
+    "weatherDesc": "Resumen del clima cada mañana y alertas severas.",
+    "voiceDesc": "Transcribe notas de voz desde WhatsApp.",
+    "ocrDesc": "Lee facturas, recibos y circulares fotografiadas.",
+    "browserDesc": "Inicia sesión, descarga estados de cuenta, llena formularios.",
+    "calendarDesc": "Lee tu calendario compartido; recuerda a la persona correcta."
+  },
+  "rules": {
+    "kicker": "Reglas",
+    "title": "Lo que importa en tu bandeja.",
+    "subtitle": "Reglas de triage afinadas para tu familia.",
+    "banks": "Bancos",
+    "banksPlaceholder": "BAC, Davivienda…",
+    "school": "Nombre del colegio",
+    "schoolPlaceholder": "Colegio Metodista",
+    "vipSenders": "Remitentes VIP",
+    "vipPlaceholder": "abuela@gmail.com",
+    "addBank": "Agregar banco",
+    "addVip": "Agregar remitente",
+    "newsletters": "Archivar newsletters y marketing en silencio",
+    "urgent": "Subir correos con palabras urgentes al tope"
+  },
+  "routines": {
+    "kicker": "Rutinas",
+    "title": "Empujones programados.",
+    "subtitle": "Activá los check-ins diarios y los basados en eventos.",
+    "morningCheckin": "Check-in matutino",
+    "morningCheckinDesc": "Diario 8am: clima, agenda del día, lo urgente de la noche.",
+    "afternoonPause": "Pausa de la tarde",
+    "afternoonPauseDesc": "Diario 3pm: un prompt para alejarte de la pantalla.",
+    "nightDisconnect": "Desconexión nocturna",
+    "nightDisconnectDesc": "Diario 11pm: brief de mañana y silencio.",
+    "examReminders": "Recordatorios de exámenes",
+    "examRemindersDesc": "Aviso previo, día 1, mitad y último día.",
+    "birthdayReminders": "Recordatorios de cumpleaños",
+    "birthdayRemindersDesc": "Empujones la mañana del cumple.",
+    "monthlyBills": "Recordatorios de facturas mensuales",
+    "monthlyBillsDesc": "Pagos recurrentes en fecha fija.",
+    "birthdays": "Cumpleaños a recordar",
+    "birthdayName": "Persona",
+    "birthdayDate": "Fecha",
+    "addBirthday": "Agregar cumple"
+  },
+  "personality": {
+    "kicker": "Alma",
+    "title": "Cómo habla Ari.",
+    "subtitle": "Semillas opcionales. Se leen cada sesión — moldean la voz del asistente.",
+    "ownerProfile": "Sobre vos (el admin)",
+    "ownerProfileHint": "Primera persona funciona. ~3 oraciones.",
+    "assistantSoul": "Cómo debe comportarse el asistente",
+    "assistantSoulHint": "Si lo dejás vacío usamos el alma por defecto.",
+    "voiceNotes": "Notas de voz por miembro",
+    "voiceNotesHint": "Ayuda a Ari a igualar el tono de cada persona."
+  },
+  "plan": {
+    "kicker": "Plan y facturación",
+    "title": "Tu plan.",
+    "subtitle": "Planes, cuotas y facturación — mockup por ahora.",
+    "current": "Plan actual",
+    "monthlyTokens": "{{tokens}} tokens mensuales",
+    "members": "{{count}} miembros",
+    "membersUnlimited": "Miembros ilimitados",
+    "perMonth": "/ mes",
+    "comingSoon": "Cambios de plan próximamente",
+    "switchTo": "Cambiar a {{plan}}",
+    "tierEssential": "Essential",
+    "tierFamilia": "Familia",
+    "tierFamiliaPlus": "Familia +",
+    "billingTitle": "Facturación",
+    "nextCharge": "Próximo cobro",
+    "billingMockup": "Mockup — sin tarjeta real registrada.",
+    "danger": "Zona de riesgo",
+    "resetDemo": "Restablecer datos demo",
+    "resetDemoDesc": "Borra tus ediciones locales y reinstala la familia Villalobos.",
+    "logout": "Cerrar sesión"
+  },
+  "kinds": {
+    "email_triage": "Triage de correo",
+    "whatsapp_sent": "WhatsApp enviado",
+    "whatsapp_received": "WhatsApp recibido",
+    "routine": "Rutina",
+    "skill": "Habilidad",
+    "rule_match": "Regla activada"
+  },
+  "time": {
+    "justNow": "ahora mismo",
+    "minutesAgo_one": "hace {{count}} min",
+    "minutesAgo_other": "hace {{count}} min",
+    "hoursAgo_one": "hace {{count}} hora",
+    "hoursAgo_other": "hace {{count}} horas",
+    "daysAgo_one": "hace {{count}} día",
+    "daysAgo_other": "hace {{count}} días"
+  }
+}

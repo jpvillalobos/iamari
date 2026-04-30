@@ -1,0 +1,228 @@
+{
+  "brand": {
+    "name": "ARI",
+    "tagline": "Assistant for Real Individuals"
+  },
+  "header": {
+    "controlPanel": "Control Panel",
+    "loggedInAs": "Signed in as"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "settings": "Settings",
+    "plan": "Plan",
+    "logout": "Sign out",
+    "save": "Save changes",
+    "discard": "Discard",
+    "saved": "Saved",
+    "saving": "Saving…",
+    "unsaved": "Unsaved changes"
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Update everything you set up during enrollment.",
+    "household": "Household",
+    "assistant": "Assistant",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "skills": "Skills",
+    "rules": "Rule packs",
+    "routines": "Routines",
+    "personality": "Soul"
+  },
+  "login": {
+    "kicker": "Sign in",
+    "title": "Welcome back.",
+    "subtitle": "Enter your admin email and password to manage your family's assistant.",
+    "email": "Email",
+    "emailPlaceholder": "you@example.com",
+    "password": "Password",
+    "passwordPlaceholder": "••••••••",
+    "remember": "Keep me signed in",
+    "submit": "Sign in",
+    "demoNote": "Mockup: any email and password works.",
+    "forgot": "Forgot password?"
+  },
+  "dashboard": {
+    "kicker": "Overview",
+    "title": "How {{name}} did this {{range}}.",
+    "subtitle": "Quick read of activity, skill use, and remaining quota.",
+    "range7d": "Last 7 days",
+    "range30d": "Last 30 days",
+    "stats": {
+      "messagesSent": "Messages sent",
+      "messagesReceived": "Messages received",
+      "emailsTriaged": "Emails triaged",
+      "emailsArchived": "Newsletters archived",
+      "routinesTriggered": "Routines triggered"
+    },
+    "skills": {
+      "title": "Skill use",
+      "subtitle": "How often each capability ran.",
+      "emailTriage": "Email triage",
+      "weather": "Weather",
+      "voiceTranscription": "Voice transcription",
+      "imageOcr": "Image OCR",
+      "browserAutomation": "Browser automation",
+      "calendar": "Calendar"
+    },
+    "quota": {
+      "title": "Token quota",
+      "subtitle": "Resets {{date}}.",
+      "used": "{{used}} of {{limit}} used",
+      "remaining": "{{remaining}} tokens remaining",
+      "plan": "On the {{plan}} plan"
+    },
+    "activity": {
+      "title": "Recent activity",
+      "empty": "No activity yet."
+    }
+  },
+  "household": {
+    "kicker": "Household",
+    "title": "Who Ari knows.",
+    "subtitle": "Edit family members. Removed members lose WhatsApp access immediately on save.",
+    "familyName": "Family name",
+    "familyNameHint": "How Ari refers to your family.",
+    "members": "Family members",
+    "addMember": "Add member",
+    "memberName": "Name",
+    "memberNickname": "Nickname",
+    "memberPhone": "WhatsApp number",
+    "memberRole": "Role",
+    "memberLanguage": "Language",
+    "roleOwner": "Admin",
+    "roleAdult": "Adult",
+    "roleChild": "Child",
+    "langEs": "Spanish",
+    "langEn": "English",
+    "langBoth": "Both",
+    "remove": "Remove",
+    "limitNote": "Your plan allows {{max}} members."
+  },
+  "assistant": {
+    "kicker": "Assistant",
+    "title": "Name, vibe, languages.",
+    "subtitle": "What your family calls Ari and how it sounds out of the box.",
+    "name": "Assistant name",
+    "emoji": "Emoji",
+    "vibe": "Personality",
+    "vibeWarm": "Warm",
+    "vibeDirect": "Direct",
+    "languages": "Languages",
+    "languagesHint": "Pick one or both. Each member's language preference takes priority."
+  },
+  "whatsapp": {
+    "kicker": "WhatsApp",
+    "title": "Who's connected.",
+    "subtitle": "Toggle WhatsApp delivery per family member.",
+    "noMembers": "Add a family member first."
+  },
+  "email": {
+    "kicker": "Email",
+    "title": "AgentMail address & forwarding.",
+    "subtitle": "The private inbox where Gmail forwarding lands.",
+    "address": "Inbox address",
+    "addressHint": "Change it any time.",
+    "forwarding": "Gmail forwarding is configured",
+    "forwardingDesc": "If you turn this off, Ari stops triaging until forwarding is re-enabled.",
+    "skipped": "Skip email triage entirely"
+  },
+  "skills": {
+    "kicker": "Skills",
+    "title": "What Ari can do.",
+    "subtitle": "Toggle capabilities. Disabled skills stop running immediately on save.",
+    "emailTriageDesc": "Reads, classifies, and summarizes incoming email.",
+    "weatherDesc": "Morning weather brief and severe-weather alerts.",
+    "voiceDesc": "Transcribes voice notes from WhatsApp.",
+    "ocrDesc": "Reads photographed receipts, bills, school notices.",
+    "browserDesc": "Logs into sites, downloads statements, fills forms.",
+    "calendarDesc": "Reads your shared calendar; reminds the right person."
+  },
+  "rules": {
+    "kicker": "Rule packs",
+    "title": "What matters in your inbox.",
+    "subtitle": "Triage rules tuned to your family.",
+    "banks": "Banks",
+    "banksPlaceholder": "BAC, Davivienda…",
+    "school": "School name",
+    "schoolPlaceholder": "Colegio Metodista",
+    "vipSenders": "VIP senders",
+    "vipPlaceholder": "abuela@gmail.com",
+    "addBank": "Add bank",
+    "addVip": "Add sender",
+    "newsletters": "Quietly archive newsletters and marketing",
+    "urgent": "Pull urgent-keyword emails to the top"
+  },
+  "routines": {
+    "kicker": "Routines",
+    "title": "Scheduled nudges.",
+    "subtitle": "Toggle the daily and event-based check-ins.",
+    "morningCheckin": "Morning check-in",
+    "morningCheckinDesc": "Daily 8am: weather, today's calendar, anything urgent overnight.",
+    "afternoonPause": "Afternoon pause",
+    "afternoonPauseDesc": "Daily 3pm: a single deliberate prompt to step away from the screen.",
+    "nightDisconnect": "Night disconnect",
+    "nightDisconnectDesc": "Daily 11pm: tomorrow's brief, then quiet.",
+    "examReminders": "Exam-period reminders",
+    "examRemindersDesc": "Pre-warning, day-1, midpoint, last day.",
+    "birthdayReminders": "Birthday reminders",
+    "birthdayRemindersDesc": "Morning-of nudges for the people you list.",
+    "monthlyBills": "Monthly bill reminders",
+    "monthlyBillsDesc": "Recurring fixed-date payments.",
+    "birthdays": "Birthdays to track",
+    "birthdayName": "Person",
+    "birthdayDate": "Date",
+    "addBirthday": "Add birthday"
+  },
+  "personality": {
+    "kicker": "Soul",
+    "title": "How Ari speaks.",
+    "subtitle": "Optional seeds. Read every session — they shape the assistant's voice.",
+    "ownerProfile": "About you (the admin)",
+    "ownerProfileHint": "First-person works. ~3 sentences.",
+    "assistantSoul": "How the assistant should behave",
+    "assistantSoulHint": "Default soul is loaded if you leave this blank.",
+    "voiceNotes": "Voice notes per family member",
+    "voiceNotesHint": "Helps Ari match each person's tone."
+  },
+  "plan": {
+    "kicker": "Plan & billing",
+    "title": "Your plan.",
+    "subtitle": "Plans, quotas, and billing — mockup only for now.",
+    "current": "Current plan",
+    "monthlyTokens": "{{tokens}} monthly tokens",
+    "members": "{{count}} members",
+    "membersUnlimited": "Unlimited members",
+    "perMonth": "/ month",
+    "comingSoon": "Upgrades coming soon",
+    "switchTo": "Switch to {{plan}}",
+    "tierEssential": "Essential",
+    "tierFamilia": "Familia",
+    "tierFamiliaPlus": "Familia +",
+    "billingTitle": "Billing",
+    "nextCharge": "Next charge",
+    "billingMockup": "Mockup — no real card on file.",
+    "danger": "Danger zone",
+    "resetDemo": "Reset demo data",
+    "resetDemoDesc": "Wipes your local edits and restores the seeded Villalobos household.",
+    "logout": "Sign out"
+  },
+  "kinds": {
+    "email_triage": "Email triage",
+    "whatsapp_sent": "WhatsApp sent",
+    "whatsapp_received": "WhatsApp received",
+    "routine": "Routine",
+    "skill": "Skill",
+    "rule_match": "Rule match"
+  },
+  "time": {
+    "justNow": "just now",
+    "minutesAgo_one": "{{count}} min ago",
+    "minutesAgo_other": "{{count}} min ago",
+    "hoursAgo_one": "{{count}} hour ago",
+    "hoursAgo_other": "{{count}} hours ago",
+    "daysAgo_one": "{{count}} day ago",
+    "daysAgo_other": "{{count}} days ago"
+  }
+}
