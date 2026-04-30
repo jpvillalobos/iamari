@@ -8,6 +8,8 @@ node_modules/
 out/
 build/
 .turbo/
+.vercel/
+.wrangler/
 
 # IDE
 .vscode/

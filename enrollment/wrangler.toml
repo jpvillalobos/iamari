@@ -1,0 +1,6 @@
+name = "ari-enrollment"
+pages_build_output_dir = "out"
+compatibility_date = "2025-01-01"
+
+[env.production]
+name = "ari-enrollment"
