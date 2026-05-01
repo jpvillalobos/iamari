@@ -39,7 +39,10 @@ function subscribe(cb: () => void): () => void {
   };
 }
 
-const getServerSnapshot = (): AriConfig => demoConfig();
+// Must be stable — useSyncExternalStore compares with Object.is, so returning
+// a new object each call would cause an infinite render loop.
+const SERVER_SNAPSHOT: AriConfig = demoConfig();
+const getServerSnapshot = (): AriConfig => SERVER_SNAPSHOT;
 
 type Ctx = {
   /** Live, edit-aware config — what the UI should display. */

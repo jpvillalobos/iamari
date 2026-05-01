@@ -1,24 +1,24 @@
 "use client";
 
-import { ReactNode, useEffect } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
-import { useSession } from "@/lib/session";
 import { Sidebar, MobileTopBar, MobileBottomNav } from "./Sidebar";
 import { SaveBar } from "./SaveBar";
 
 export function AppShell({ children }: { children: ReactNode }) {
   const router = useRouter();
   const pathname = usePathname() ?? "";
-  const { session } = useSession();
+  const [mounted, setMounted] = useState(false);
 
-  // Auth gate: anything not /login requires a session.
+  useEffect(() => { setMounted(true); }, []);
+
+  // Auth gate runs only after client mount to avoid SSR hydration mismatches.
   useEffect(() => {
+    if (!mounted) return;
     if (pathname === "/login") return;
-    if (typeof window === "undefined") return;
-    // Check storage directly to avoid the SSR-empty initial render redirecting eagerly.
     const raw = localStorage.getItem("ari-session");
     if (!raw) router.replace("/login");
-  }, [pathname, router, session]);
+  }, [mounted, pathname, router]);
 
   return (
     <div className="flex min-h-screen relative z-10">
