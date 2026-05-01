@@ -6,12 +6,19 @@ import type { Session } from "./types";
 const STORAGE_KEY = "ari-session";
 const CHANGE_EVENT = "ari-session-change";
 
+let _sessionRaw: string | null = null;
+let _sessionParsed: Session | null = null;
+
 function read(): Session | null {
   if (typeof window === "undefined") return null;
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (!raw) return null;
-    return JSON.parse(raw) as Session;
+    if (raw !== _sessionRaw) {
+      _sessionRaw = raw;
+      _sessionParsed = JSON.parse(raw) as Session;
+    }
+    return _sessionParsed;
   } catch {
     return null;
   }

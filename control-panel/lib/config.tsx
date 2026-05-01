@@ -14,14 +14,29 @@ import { AriConfig, demoConfig } from "./types";
 const STORAGE_KEY = "ari-config";
 const CHANGE_EVENT = "ari-config-change";
 
+// useSyncExternalStore compares snapshots with Object.is on every render.
+// Returning a new object each call (even with the same data) looks like a
+// perpetual change and causes an infinite render loop. We cache both the
+// no-config fallback (singleton) and the parsed localStorage result (keyed
+// by raw string so it auto-invalidates when the content actually changes).
+const SERVER_SNAPSHOT: AriConfig = demoConfig();
+const getServerSnapshot = (): AriConfig => SERVER_SNAPSHOT;
+
+let _savedRaw: string | null = null;
+let _savedParsed: AriConfig = SERVER_SNAPSHOT;
+
 function readSaved(): AriConfig {
-  if (typeof window === "undefined") return demoConfig();
+  if (typeof window === "undefined") return SERVER_SNAPSHOT;
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
-    if (!raw) return demoConfig();
-    return JSON.parse(raw) as AriConfig;
+    if (!raw) return SERVER_SNAPSHOT;
+    if (raw !== _savedRaw) {
+      _savedRaw = raw;
+      _savedParsed = JSON.parse(raw) as AriConfig;
+    }
+    return _savedParsed;
   } catch {
-    return demoConfig();
+    return SERVER_SNAPSHOT;
   }
 }
 
@@ -38,11 +53,6 @@ function subscribe(cb: () => void): () => void {
     window.removeEventListener(CHANGE_EVENT, onCustom);
   };
 }
-
-// Must be stable — useSyncExternalStore compares with Object.is, so returning
-// a new object each call would cause an infinite render loop.
-const SERVER_SNAPSHOT: AriConfig = demoConfig();
-const getServerSnapshot = (): AriConfig => SERVER_SNAPSHOT;
 
 type Ctx = {
   /** Live, edit-aware config — what the UI should display. */
